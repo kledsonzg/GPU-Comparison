@@ -1,0 +1,698 @@
+[
+    {
+        "gpuName": "GeForce RTX 5090",
+        "performance": 45474
+    },
+    {
+        "gpuName": "GeForce RTX 4090",
+        "performance": 34684
+    },
+    {
+        "gpuName": "GeForce RTX 5080",
+        "performance": 29967
+    },
+    {
+        "gpuName": "GeForce RTX 4080 SUPER",
+        "performance": 26755
+    },
+    {
+        "gpuName": "GeForce RTX 4080",
+        "performance": 26529
+    },
+    {
+        "gpuName": "Radeon RX 7900 XTX",
+        "performance": 26513
+    },
+    {
+        "gpuName": "GeForce RTX 5070 Ti",
+        "performance": 26131
+    },
+    {
+        "gpuName": "Radeon RX 9070 XT",
+        "performance": 24968
+    },
+    {
+        "gpuName": "Radeon RX 7900 XT",
+        "performance": 22829
+    },
+    {
+        "gpuName": "GeForce RTX 3090 Ti",
+        "performance": 22412
+    },
+    {
+        "gpuName": "GeForce RTX 4070 Ti SUPER",
+        "performance": 22391
+    },
+    {
+        "gpuName": "Radeon RX 9070",
+        "performance": 22369
+    },
+    {
+        "gpuName": "GeForce RTX 4070 Ti",
+        "performance": 20495
+    },
+    {
+        "gpuName": "GeForce RTX 5070",
+        "performance": 20290
+    },
+    {
+        "gpuName": "GeForce RTX 3090",
+        "performance": 19992
+    },
+    {
+        "gpuName": "GeForce RTX 3080 Ti",
+        "performance": 19728
+    },
+    {
+        "gpuName": "GeForce RTX 4070 SUPER",
+        "performance": 19096
+    },
+    {
+        "gpuName": "Radeon RX 7900 GRE",
+        "performance": 18803
+    },
+    {
+        "gpuName": "Radeon RX 6950 XT",
+        "performance": 18494
+    },
+    {
+        "gpuName": "GeForce RTX 4070",
+        "performance": 18240
+    },
+    {
+        "gpuName": "Radeon RX 6900 XT",
+        "performance": 18058
+    },
+    {
+        "gpuName": "GeForce RTX 3080",
+        "performance": 17770
+    },
+    {
+        "gpuName": "Radeon RX 7800 XT",
+        "performance": 17719
+    },
+    {
+        "gpuName": "Radeon RX 6800 XT",
+        "performance": 17092
+    },
+    {
+        "gpuName": "GeForce RTX 5060 Ti 16 GB",
+        "performance": 15866
+    },
+    {
+        "gpuName": "GeForce RTX 5060 Ti 8 GB",
+        "performance": 15769
+    },
+    {
+        "gpuName": "Radeon RX 7700 XT",
+        "performance": 15536
+    },
+    {
+        "gpuName": "Radeon RX 9060 XT 16 GB",
+        "performance": 15060
+    },
+    {
+        "gpuName": "GeForce RTX 3070 Ti",
+        "performance": 15033
+    },
+    {
+        "gpuName": "Radeon RX 6800",
+        "performance": 14528
+    },
+    {
+        "gpuName": "Radeon RX 9060 XT 8 GB",
+        "performance": 14216
+    },
+    {
+        "gpuName": "GeForce RTX 3070",
+        "performance": 14064
+    },
+    {
+        "gpuName": "GeForce RTX 2080 Ti",
+        "performance": 13945
+    },
+    {
+        "gpuName": "GeForce RTX 4060 Ti 8 GB",
+        "performance": 13883
+    },
+    {
+        "gpuName": "GeForce RTX 5060",
+        "performance": 13667
+    },
+    {
+        "gpuName": "Radeon RX 6750 XT",
+        "performance": 13335
+    },
+    {
+        "gpuName": "GeForce RTX 3060 Ti",
+        "performance": 12311
+    },
+    {
+        "gpuName": "Radeon RX 6700 XT",
+        "performance": 12092
+    },
+    {
+        "gpuName": "GeForce RTX 2080 SUPER",
+        "performance": 11235
+    },
+    {
+        "gpuName": "Radeon RX 7600 XT",
+        "performance": 11137
+    },
+    {
+        "gpuName": "GeForce RTX 4060",
+        "performance": 11105
+    },
+    {
+        "gpuName": "Arc B580",
+        "performance": 11085
+    },
+    {
+        "gpuName": "GeForce RTX 5050",
+        "performance": 10801
+    },
+    {
+        "gpuName": "GeForce RTX 2080",
+        "performance": 10717
+    },
+    {
+        "gpuName": "Radeon RX 6650 XT",
+        "performance": 10480
+    },
+    {
+        "gpuName": "Radeon RX 7600",
+        "performance": 10467
+    },
+    {
+        "gpuName": "GeForce RTX 2070 SUPER",
+        "performance": 9963
+    },
+    {
+        "gpuName": "GeForce GTX 1080 Ti",
+        "performance": 9857
+    },
+    {
+        "gpuName": "Arc A770",
+        "performance": 9846
+    },
+    {
+        "gpuName": "GeForce RTX 3060 12 GB",
+        "performance": 9490
+    },
+    {
+        "gpuName": "Radeon RX 6600 XT",
+        "performance": 9353
+    },
+    {
+        "gpuName": "Radeon VII",
+        "performance": 9327
+    },
+    {
+        "gpuName": "Arc A750",
+        "performance": 9141
+    },
+    {
+        "gpuName": "Radeon RX 5700 XT",
+        "performance": 8934
+    },
+    {
+        "gpuName": "GeForce RTX 2070",
+        "performance": 8805
+    },
+    {
+        "gpuName": "Radeon RX 6600",
+        "performance": 8409
+    },
+    {
+        "gpuName": "Arc A580",
+        "performance": 8168
+    },
+    {
+        "gpuName": "GeForce RTX 2060 SUPER",
+        "performance": 8158
+    },
+    {
+        "gpuName": "Radeon RX Vega 64",
+        "performance": 7809
+    },
+    {
+        "gpuName": "GeForce RTX 2060",
+        "performance": 7559
+    },
+    {
+        "gpuName": "Radeon RX 5700",
+        "performance": 7522
+    },
+    {
+        "gpuName": "GeForce GTX 1080",
+        "performance": 7381
+    },
+    {
+        "gpuName": "GeForce GTX 1070 Ti",
+        "performance": 7242
+    },
+    {
+        "gpuName": "Radeon RX 5600 XT",
+        "performance": 7175
+    },
+    {
+        "gpuName": "Radeon RX Vega 56",
+        "performance": 6817
+    },
+    {
+        "gpuName": "GeForce GTX 1070",
+        "performance": 6571
+    },
+    {
+        "gpuName": "GeForce GTX 1660 SUPER",
+        "performance": 6223
+    },
+    {
+        "gpuName": "GeForce GTX 1660 Ti",
+        "performance": 6216
+    },
+    {
+        "gpuName": "GeForce GTX 980 Ti",
+        "performance": 5888
+    },
+    {
+        "gpuName": "GeForce RTX 3050 8 GB",
+        "performance": 5857
+    },
+    {
+        "gpuName": "Radeon R9 FURY X",
+        "performance": 5790
+    },
+    {
+        "gpuName": "GeForce GTX 1660",
+        "performance": 5724
+    },
+    {
+        "gpuName": "Radeon RX 590",
+        "performance": 5406
+    },
+    {
+        "gpuName": "Radeon R9 FURY",
+        "performance": 5269
+    },
+    {
+        "gpuName": "GeForce GTX 980",
+        "performance": 5204
+    },
+    {
+        "gpuName": "GeForce GTX 1650 SUPER",
+        "performance": 5153
+    },
+    {
+        "gpuName": "Radeon RX 6500 XT",
+        "performance": 5087
+    },
+    {
+        "gpuName": "Radeon RX 5500 XT",
+        "performance": 5044
+    },
+    {
+        "gpuName": "Radeon RX 580",
+        "performance": 5005
+    },
+    {
+        "gpuName": "GeForce GTX 1060 6 GB",
+        "performance": 4878
+    },
+    {
+        "gpuName": "Radeon R9 390X",
+        "performance": 4809
+    },
+    {
+        "gpuName": "GeForce GTX 690",
+        "performance": 4750
+    },
+    {
+        "gpuName": "Radeon RX 480",
+        "performance": 4710
+    },
+    {
+        "gpuName": "Radeon HD 7990",
+        "performance": 4688
+    },
+    {
+        "gpuName": "GeForce GTX 780 Ti",
+        "performance": 4602
+    },
+    {
+        "gpuName": "GeForce GTX 970",
+        "performance": 4482
+    },
+    {
+        "gpuName": "Radeon R9 290X",
+        "performance": 4470
+    },
+    {
+        "gpuName": "Radeon R9 390",
+        "performance": 4398
+    },
+    {
+        "gpuName": "Radeon RX 570",
+        "performance": 4345
+    },
+    {
+        "gpuName": "Radeon R9 290",
+        "performance": 4123
+    },
+    {
+        "gpuName": "Radeon RX 470",
+        "performance": 4067
+    },
+    {
+        "gpuName": "GeForce GTX 1650",
+        "performance": 3827
+    },
+    {
+        "gpuName": "Radeon RX 6400",
+        "performance": 3752
+    },
+    {
+        "gpuName": "Arc A380",
+        "performance": 3701
+    },
+    {
+        "gpuName": "GeForce GTX 780",
+        "performance": 3695
+    },
+    {
+        "gpuName": "Radeon HD 7970 GHz Edition",
+        "performance": 3336
+    },
+    {
+        "gpuName": "GeForce GTX 590",
+        "performance": 3334
+    },
+    {
+        "gpuName": "Radeon R9 280X",
+        "performance": 3287
+    },
+    {
+        "gpuName": "Radeon HD 6990",
+        "performance": 3210
+    },
+    {
+        "gpuName": "GeForce GTX 1050 Ti",
+        "performance": 3057
+    },
+    {
+        "gpuName": "GeForce GTX 680",
+        "performance": 2988
+    },
+    {
+        "gpuName": "Radeon R9 380",
+        "performance": 2958
+    },
+    {
+        "gpuName": "Radeon HD 7970",
+        "performance": 2958
+    },
+    {
+        "gpuName": "GeForce GTX 770",
+        "performance": 2950
+    },
+    {
+        "gpuName": "Radeon R9 285",
+        "performance": 2928
+    },
+    {
+        "gpuName": "GeForce GTX 960",
+        "performance": 2838
+    },
+    {
+        "gpuName": "GeForce GTX 670",
+        "performance": 2766
+    },
+    {
+        "gpuName": "Radeon HD 5970",
+        "performance": 2500
+    },
+    {
+        "gpuName": "GeForce GTX 1630",
+        "performance": 2498
+    },
+    {
+        "gpuName": "Radeon HD 7950",
+        "performance": 2452
+    },
+    {
+        "gpuName": "GeForce GTX 1050",
+        "performance": 2446
+    },
+    {
+        "gpuName": "GeForce GTX 760",
+        "performance": 2429
+    },
+    {
+        "gpuName": "GeForce GTX 580",
+        "performance": 2427
+    },
+    {
+        "gpuName": "GeForce GTX 660 Ti",
+        "performance": 2416
+    },
+    {
+        "gpuName": "Radeon R9 270X",
+        "performance": 2386
+    },
+    {
+        "gpuName": "Radeon HD 7870 GHz Edition",
+        "performance": 2330
+    },
+    {
+        "gpuName": "GeForce GTX 950",
+        "performance": 2309
+    },
+    {
+        "gpuName": "Radeon RX 560",
+        "performance": 2175
+    },
+    {
+        "gpuName": "GeForce GTX 570",
+        "performance": 2139
+    },
+    {
+        "gpuName": "GeForce GTX 660",
+        "performance": 2133
+    },
+    {
+        "gpuName": "Radeon RX 460",
+        "performance": 2125
+    },
+    {
+        "gpuName": "Radeon R7 370",
+        "performance": 2125
+    },
+    {
+        "gpuName": "Radeon HD 6970",
+        "performance": 2052
+    },
+    {
+        "gpuName": "GeForce GTX 480",
+        "performance": 1961
+    },
+    {
+        "gpuName": "Radeon HD 7850",
+        "performance": 1927
+    },
+    {
+        "gpuName": "GeForce GTX 295",
+        "performance": 1891
+    },
+    {
+        "gpuName": "Radeon HD 6950",
+        "performance": 1826
+    },
+    {
+        "gpuName": "GeForce GTX 750 Ti",
+        "performance": 1818
+    },
+    {
+        "gpuName": "Radeon HD 4870 X2",
+        "performance": 1785
+    },
+    {
+        "gpuName": "GeForce GTX 560 Ti",
+        "performance": 1776
+    },
+    {
+        "gpuName": "Radeon HD 5870",
+        "performance": 1722
+    },
+    {
+        "gpuName": "Radeon HD 6870",
+        "performance": 1614
+    },
+    {
+        "gpuName": "GeForce GTX 470",
+        "performance": 1557
+    },
+    {
+        "gpuName": "GeForce GTX 650 Ti",
+        "performance": 1491
+    },
+    {
+        "gpuName": "Radeon HD 5850",
+        "performance": 1464
+    },
+    {
+        "gpuName": "GeForce GTX 285",
+        "performance": 1365
+    },
+    {
+        "gpuName": "Radeon HD 6850",
+        "performance": 1339
+    },
+    {
+        "gpuName": "GeForce GTX 280",
+        "performance": 1253
+    },
+    {
+        "gpuName": "Radeon HD 7770 GHz Edition",
+        "performance": 1250
+    },
+    {
+        "gpuName": "GeForce GTX 275",
+        "performance": 1246
+    },
+    {
+        "gpuName": "GeForce GT 1030",
+        "performance": 1236
+    },
+    {
+        "gpuName": "GeForce GTX 460",
+        "performance": 1214
+    },
+    {
+        "gpuName": "Radeon HD 4890",
+        "performance": 1170
+    },
+    {
+        "gpuName": "Radeon HD 6790",
+        "performance": 1151
+    },
+    {
+        "gpuName": "Radeon HD 5830",
+        "performance": 1094
+    },
+    {
+        "gpuName": "GeForce GTX 650",
+        "performance": 1035
+    },
+    {
+        "gpuName": "GeForce GTX 550 Ti",
+        "performance": 1026
+    },
+    {
+        "gpuName": "Radeon HD 4870",
+        "performance": 1013
+    },
+    {
+        "gpuName": "GeForce GTX 260",
+        "performance": 1001
+    },
+    {
+        "gpuName": "Radeon HD 5770",
+        "performance": 983
+    },
+    {
+        "gpuName": "Radeon HD 7750",
+        "performance": 976
+    },
+    {
+        "gpuName": "Radeon HD 5750",
+        "performance": 855
+    },
+    {
+        "gpuName": "GeForce GTS 450",
+        "performance": 826
+    },
+    {
+        "gpuName": "GeForce GTS 250",
+        "performance": 802
+    },
+    {
+        "gpuName": "Radeon HD 4850",
+        "performance": 784
+    },
+    {
+        "gpuName": "Radeon HD 4770",
+        "performance": 744
+    },
+    {
+        "gpuName": "Radeon HD 4830",
+        "performance": 697
+    },
+    {
+        "gpuName": "Radeon HD 6670",
+        "performance": 675
+    },
+    {
+        "gpuName": "GeForce 9800 GT",
+        "performance": 649
+    },
+    {
+        "gpuName": "GeForce GT 640",
+        "performance": 627
+    },
+    {
+        "gpuName": "Radeon HD 5670",
+        "performance": 586
+    },
+    {
+        "gpuName": "GeForce 9600 GT",
+        "performance": 551
+    },
+    {
+        "gpuName": "GeForce GT 240",
+        "performance": 480
+    },
+    {
+        "gpuName": "GeForce GT 440",
+        "performance": 470
+    },
+    {
+        "gpuName": "Radeon HD 4670",
+        "performance": 446
+    },
+    {
+        "gpuName": "Radeon HD 5570",
+        "performance": 410
+    },
+    {
+        "gpuName": "GeForce GT 430",
+        "performance": 405
+    },
+    {
+        "gpuName": "GeForce GT 220",
+        "performance": 310
+    },
+    {
+        "gpuName": "GeForce GT 520",
+        "performance": 251
+    },
+    {
+        "gpuName": "Radeon HD 6450",
+        "performance": 237
+    },
+    {
+        "gpuName": "Radeon HD 5450",
+        "performance": 202
+    },
+    {
+        "gpuName": "Radeon HD 4550",
+        "performance": 158
+    },
+    {
+        "gpuName": "GeForce 9400 GT",
+        "performance": 128
+    },
+    {
+        "gpuName": "GeForce 210",
+        "performance": 100
+    }
+]

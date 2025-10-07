@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Compara&ccedil;&atilde;o de GPU's</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Compara&ccedil;&atilde;o de GPU's">
+        <!-- PT-BR -->
+        <meta name="language" content="pt-br">
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=dark_mode" />
+        <style>
+            /* Mobile */
+            @media (max-width: 600px) {
+                main{
+                    & .row{
+                        font-size: 1rem;
+                    }
+                }
+                
+            }
+            body{
+                margin: 0;
+                padding: 0;
+                &.dark-mode{
+                    background-color: #222;
+                    color: #eee;
+                }
+            }
+            header{
+                height: 150px;
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                border-bottom: rgba(0, 0, 0, 0.300) 2px solid;
+                margin-bottom: 2px;
+                & .column{
+                    width: 33%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+            main{
+                margin-left: 4px;
+            }
+            .column p{
+                display: flex;
+                flex-direction: column;
+            }
+            .row{
+                position: relative;
+                width: 100%;
+                min-height: 30px;
+                font-family: Arial;
+                font-size: 1.2rem;
+                margin-bottom: 3px;
+                cursor: pointer;
+            }
+            .bar{
+                position: absolute;
+                height: 100%;
+                border-radius: 5px;    
+                background-color: rgba(0, 255, 0, 0.301);
+                &.amd{
+                    background-color: rgba(220, 20, 60, 0.301);
+                }
+                &.intel{
+                    background-color: rgba(0, 0, 255, 0.301);
+                }
+            }
+            .ir{
+                position: absolute;
+                left: 0px;
+                display: flex;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+                & *{
+                    width: 50%;
+                }
+            }
+            .dark-mode-toggle{
+                position: relative;
+                border: #00000000 2px solid;
+                border-radius: 5px;
+                background: none;
+                cursor: pointer;
+                font-size: 2rem;
+                color: inherit;
+                &:hover{
+                    background-color: rgba(128, 128, 128, 0.1);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="column" style="justify-content: space-around;">
+                <p>Clique em uma GPU para setar a mesma como base</p>
+                <p>Baseado nos dados: <a href="https://www.techpowerup.com/gpu-specs/" target="_blank">
+                    <img src="https://tpucdn.com/images/logo-v1758697018.svg" alt="TechPowerUp" style="height: 1.5rem; vertical-align: middle;">
+                </a>
+                </p>
+            </div>
+            <h1 class="column">Compara&ccedil;&atilde;o de GPU's</h1>
+            <div class="column">
+                <!-- Dark mode modern switch toggle -->
+                <button class="dark-mode-toggle" onclick="document.body.classList.toggle('dark-mode')">
+                    <span class="material-symbols-outlined">dark_mode</span>
+                </button>                
+            </div>
+        </header>
+        <main></main>
+        <script>
+            const body = document.body.querySelector('main');
+            var data = [];
+            var relativeTo = 'GeForce 210';
+
+            async function fetchData() {
+                const json = await (await fetch('/data.json')).text()
+                data = JSON.parse(json);
+                fillBody();
+            }
+            
+            function fillBody(){
+                body.innerHTML = '';
+
+                const baseValue = data.find(d => d.gpuName === relativeTo).performance;
+                data = data.map(d => {
+                    return {
+                        ...d,
+                        performance: Math.floor((d.performance * 100) / baseValue)
+                    }
+                });
+
+                const max = Math.max(...data.map(d => d.performance));
+
+                data.forEach(d => {
+                    const vendor = d.gpuName.includes('Radeon') ? 'amd' : (d.gpuName.includes('Arc') ? 'intel' : '');
+                    const width = (d.performance * 100) / max;
+
+                    const r = document.createElement('div');
+                    r.className = 'row';
+
+                    const bar = document.createElement('div');
+                    bar.style.width = `${width}%`;
+                    
+                    bar.className += `bar ${vendor}`;
+
+                    r.appendChild(bar);
+
+                    const ir = document.createElement('div');
+                    ir.className = 'ir';
+                    ir.innerHTML = `<span>${d.gpuName}</span><span>${d.performance} %</span>`;
+                    r.appendChild(ir);
+
+                    r.onclick = () => {
+                        relativeTo = d.gpuName;
+                        fetchData();
+                    }
+                    body.appendChild(r);
+                });
+            }
+
+            fetchData();
+        </script>
+    </body>
+</html>
