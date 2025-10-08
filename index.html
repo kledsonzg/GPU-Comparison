@@ -170,22 +170,22 @@
             const body = document.body.querySelector('main');
             const href = `${location.origin}${location.pathname}`;
             
-            var data = [];
+            const _data = [];
             var relativeTo = 'GeForce 210';
 
             async function fetchData() {
-                const json = await (await fetch(`${href}data.json`)).text()
-                data = JSON.parse(json);
+                const json = await (await fetch(`${href}data.json`)).json()
+                _data.push(...json);
                 fillBody();
             }
             
             function fillBody(){
                 body.innerHTML = '';
 
-                const baseValue = data.find(d => d.gpuName === relativeTo).performance;
-                data = data.map(d => {
+                const baseValue = _data.find(d => d.gpuName === relativeTo).performance;
+                const data = _data.map(d => {
                     return {
-                        ...d,
+                        gpuName: d.gpuName,
                         performance: Math.floor((d.performance * 100) / baseValue)
                     }
                 });
@@ -213,7 +213,7 @@
 
                     r.onclick = () => {
                         relativeTo = d.gpuName;
-                        fetchData();
+                        fillBody();
                     }
                     body.appendChild(r);
                 });
