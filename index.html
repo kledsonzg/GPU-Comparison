@@ -114,7 +114,7 @@
         <main></main>
         <script>
             const body = document.body.querySelector('main');
-            const href = window.location.href;
+            const href = `${location.origin}${location.pathname}`;
             
             var data = [];
             var relativeTo = 'GeForce 210';
