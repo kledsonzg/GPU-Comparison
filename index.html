@@ -114,11 +114,13 @@
         <main></main>
         <script>
             const body = document.body.querySelector('main');
+            const href = window.location.href;
+            
             var data = [];
             var relativeTo = 'GeForce 210';
 
             async function fetchData() {
-                const json = await (await fetch('/data.json')).text()
+                const json = await (await fetch(`${href}data.json`)).text()
                 data = JSON.parse(json);
                 fillBody();
             }
