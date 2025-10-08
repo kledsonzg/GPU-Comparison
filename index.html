@@ -56,17 +56,28 @@
                 font-size: 1.2rem;
                 margin-bottom: 3px;
                 cursor: pointer;
+                &:hover{
+                    & .bar{
+                        background-color: rgba(0, 255, 0, 0.500);
+                    }
+                    & .bar.amd{
+                        background-color: rgba(220, 20, 60, 0.500);
+                    }
+                    & .bar.intel{
+                        background-color: rgba(0, 0, 255, 0.500);
+                    }
+                }
             }
             .bar{
                 position: absolute;
                 height: 100%;
                 border-radius: 5px;    
-                background-color: rgba(0, 255, 0, 0.301);
+                background-color: rgba(0, 255, 0, 0.300);
                 &.amd{
-                    background-color: rgba(220, 20, 60, 0.301);
+                    background-color: rgba(220, 20, 60, 0.300);
                 }
                 &.intel{
-                    background-color: rgba(0, 0, 255, 0.301);
+                    background-color: rgba(0, 0, 255, 0.300);
                 }
             }
             .ir{
