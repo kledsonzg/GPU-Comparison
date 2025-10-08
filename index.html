@@ -12,6 +12,35 @@
         <style>
             /* Mobile */
             @media (max-width: 600px) {
+                *.no-mobile{
+                    display: none;
+                }
+                .mobile-only{
+                    display: unset;
+                    &.block{
+                        display: block;
+                    }
+                    &.flex{
+                        display: flex;
+                        &.vertical{
+                            flex-direction: column;
+                        }
+                    }
+                }
+                header {
+                    font-size: 0.8rem;
+                }
+                header .column{
+                    &:first-child{
+                        flex-direction: column;
+                    }
+                    & > p:first-child{
+                        display: none;
+                    }
+                    & a img{
+                        width: 90px;
+                    }
+                }
                 main{
                     & .row{
                         font-size: 1rem;
@@ -39,10 +68,16 @@
                     display: flex;
                     align-items: center;
                     justify-content: center;
+                    &.vertical{
+                        flex-direction: column;
+                    }
                 }
             }
             main{
                 margin-left: 4px;
+            }
+            .mobile-only{
+                display: none;
             }
             .column p{
                 display: flex;
@@ -95,12 +130,12 @@
                 position: relative;
                 border: #00000000 2px solid;
                 border-radius: 5px;
-                background: none;
+                background-color: rgba(128, 128, 128, 0.1);
                 cursor: pointer;
                 font-size: 2rem;
                 color: inherit;
                 &:hover{
-                    background-color: rgba(128, 128, 128, 0.1);
+                    background-color: rgba(128, 128, 128, 0.2);
                 }
             }
         </style>
@@ -109,19 +144,27 @@
         <header>
             <div class="column" style="justify-content: space-around;">
                 <p>Clique em uma GPU para setar a mesma como base</p>
-                <p>Baseado nos dados: <a href="https://www.techpowerup.com/gpu-specs/" target="_blank">
-                    <img src="https://tpucdn.com/images/logo-v1758697018.svg" alt="TechPowerUp" style="height: 1.5rem; vertical-align: middle;">
-                </a>
-                </p>
+                <div style="display: flex; flex-direction: column;">
+                    <span class="no-mobile">Baseado nos dados:</span>
+                    <div class="mobile-only flex vertical">
+                        <span>Baseado</span>
+                        <span>nos</span>
+                        <span>dados:</span>
+                    </div>
+                    <a href="https://www.techpowerup.com/gpu-specs/" target="_blank">
+                        <img src="https://tpucdn.com/images/logo-v1758697018.svg" alt="TechPowerUp" style="height: 1.5rem; vertical-align: middle;">
+                    </a>
+                </div>
             </div>
             <h1 class="column">Compara&ccedil;&atilde;o de GPU's</h1>
             <div class="column">
                 <!-- Dark mode modern switch toggle -->
-                <button class="dark-mode-toggle" onclick="document.body.classList.toggle('dark-mode')">
+                <button class="dark-mode-toggle" onclick="toggleDarkMode()" title="Alternar modo escuro/claro">
                     <span class="material-symbols-outlined">dark_mode</span>
                 </button>                
             </div>
         </header>
+        <span class="mobile-only block tip" style="position: relative; width: 100%; text-align: center; border-bottom: rgba(0, 0, 0, 0.300) 2px solid; margin-bottom: 5px;">Clique em uma GPU para setar a mesma como base</span>
         <main></main>
         <script>
             const body = document.body.querySelector('main');
@@ -176,6 +219,21 @@
                 });
             }
 
+            function toggleDarkMode(){
+                document.body.classList.toggle('dark-mode');
+                const isDarkMode = document.body.classList.contains('dark-mode');
+                const settings = { darkMode: isDarkMode };
+                localStorage.setItem('settings', JSON.stringify(settings));
+            }
+
+            function loadSettings(){
+                const settings = JSON.parse(localStorage.getItem('settings'));
+                if(settings && settings.darkMode){
+                    document.body.classList.add('dark-mode');
+                }
+            }
+            
+            loadSettings();
             fetchData();
         </script>
     </body>
